@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta property="og:site_name" content="ParkMyCloud">
+    <meta property="og:url" content="www.parkmycloud.com">
+    <meta property="og:description" content="Automatically identify and eliminate wasted cloud spend by turning utilization data into policy-driven action.">
+    <meta property="og:image" content="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/PMC-logo-cloud-only-favicon.ico">
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/x-icon" href="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/PMC-logo-cloud-only-favicon.ico">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-N7SFHJ');</script>
+	<!-- End Google Tag Manager -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.parkmycloud.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+	
+	
+	<script>var et_site_url='https://www.parkmycloud.com';var et_post_id='7097';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><meta name='robots' content='max-image-preview:large' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v15.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>The 5 Components of Azure DevOps - ParkMyCloud</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A300%2C400%2C500%2C700&#038;subset=latin%2Clatin-ext&#038;display=swap" /><link rel="stylesheet" href="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/541d8e42bca6a901aaf1ac1b856d11e5.css" media="all" data-minify="1" />
+	<meta name="description" content="We take a look at Azure DevOps, a hosted service providing development and collaboration tool that was formerly known as Visual Studio Team Services (VSTS)." />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://www.parkmycloud.com/blog/azure-devops/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="The 5 Components of Azure DevOps - ParkMyCloud" />
+	<meta property="og:description" content="We take a look at Azure DevOps, a hosted service providing development and collaboration tool that was formerly known as Visual Studio Team Services (VSTS)." />
+	<meta property="og:url" content="https://www.parkmycloud.com/blog/azure-devops/" />
+	<meta property="og:site_name" content="ParkMyCloud" />
+	<meta property="article:publisher" content="https://www.facebook.com/ParkMyCloud/" />
+	<meta property="article:published_time" content="2019-11-14T14:29:16+00:00" />
+	<meta property="article:modified_time" content="2019-12-17T20:01:23+00:00" />
+	<meta property="og:image" content="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps-3.png" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="500" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Jonathan Ferrer">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="4 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.parkmycloud.com/#organization","name":"ParkMyCloud","url":"https://www.parkmycloud.com/","sameAs":["https://www.facebook.com/ParkMyCloud/","https://www.instagram.com/parkmycloud/","https://www.linkedin.com/company/parkmycloud/"],"logo":{"@type":"ImageObject","@id":"https://www.parkmycloud.com/#logo","inLanguage":"en-US","url":"https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/parkmycloud-logo-bt.png","width":327,"height":67,"caption":"ParkMyCloud"},"image":{"@id":"https://www.parkmycloud.com/#logo"}},{"@type":"WebSite","@id":"https://www.parkmycloud.com/#website","url":"https://www.parkmycloud.com/","name":"ParkMyCloud","description":"Automatically schedule on/off times for public cloud resources","publisher":{"@id":"https://www.parkmycloud.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://www.parkmycloud.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.parkmycloud.com/blog/azure-devops/#primaryimage","inLanguage":"en-US","url":"https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps-3.png","width":800,"height":500,"caption":"Azure DevOps"},{"@type":"WebPage","@id":"https://www.parkmycloud.com/blog/azure-devops/#webpage","url":"https://www.parkmycloud.com/blog/azure-devops/","name":"The 5 Components of Azure DevOps - ParkMyCloud","isPartOf":{"@id":"https://www.parkmycloud.com/#website"},"primaryImageOfPage":{"@id":"https://www.parkmycloud.com/blog/azure-devops/#primaryimage"},"datePublished":"2019-11-14T14:29:16+00:00","dateModified":"2019-12-17T20:01:23+00:00","description":"We take a look at Azure DevOps, a hosted service providing development and collaboration tool that was formerly known as Visual Studio Team Services (VSTS).","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.parkmycloud.com/blog/azure-devops/"]}]},{"@type":"Article","@id":"https://www.parkmycloud.com/blog/azure-devops/#article","isPartOf":{"@id":"https://www.parkmycloud.com/blog/azure-devops/#webpage"},"author":{"@id":"https://www.parkmycloud.com/#/schema/person/1a0190470e4c6a2c66697c4d26ee71c0"},"headline":"The 5 Components of Azure DevOps","datePublished":"2019-11-14T14:29:16+00:00","dateModified":"2019-12-17T20:01:23+00:00","mainEntityOfPage":{"@id":"https://www.parkmycloud.com/blog/azure-devops/#webpage"},"commentCount":0,"publisher":{"@id":"https://www.parkmycloud.com/#organization"},"image":{"@id":"https://www.parkmycloud.com/blog/azure-devops/#primaryimage"},"articleSection":"Microsoft Azure Management,Software Development in the Cloud","inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.parkmycloud.com/blog/azure-devops/#respond"]}]},{"@type":"Person","@id":"https://www.parkmycloud.com/#/schema/person/1a0190470e4c6a2c66697c4d26ee71c0","name":"Jonathan Ferrer","image":{"@type":"ImageObject","@id":"https://www.parkmycloud.com/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/4682fe7b2c501f06ca8b20b29d08aaaf?s=96&d=mm&r=g","caption":"Jonathan Ferrer"},"description":"Jonathan Ferrer is the Marketing Manager for ParkMyCloud. Jonathan manages various digital marketing initiatives at ParkMyCloud. He developed an interest in communications while going to school for business management and IT studies. As a Marketing Manager, it was befitting for Jonathan to join ParkMyCloud and combine his passion for both technology and communications. In his spare time, he likes spending time with family, and enjoys cooking, reading, playing tennis, hiking and traveling."}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//js.hs-scripts.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="ParkMyCloud &raquo; Feed" href="https://www.parkmycloud.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="ParkMyCloud &raquo; Comments Feed" href="https://www.parkmycloud.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="ParkMyCloud &raquo; The 5 Components of Azure DevOps Comments Feed" href="https://www.parkmycloud.com/blog/azure-devops/feed/" />
+ 
+    <meta property="og:title" content="The 5 Components of Azure DevOps"/>
+    <meta property="og:description" content="Automatically schedule on/off times for public cloud resources"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://www.parkmycloud.com/blog/azure-devops/"/>
+    <meta property="og:site_name" content="ParkMyCloud"/>
+    <meta property="og:image" content="Array"/>
+ 
+<meta content="Divi Child v.1.0.0" name="generator"/><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/plugins/jquery-updater/js/jquery-3.5.1.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/plugins/jquery-updater/js/jquery-migrate-3.3.0.min.js?ver=3.3.0' id='jquery-migrate-js'></script>
+<script data-minify="1" type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/jquery-1.8.2.min-385c775d0f56e49a7aacdad71ff62cc3.js' id='jquery1.8.2-js'></script>
+<script type='text/javascript' id='jquery1.8.2-js-after'>
+var jQuery1_8_2 = $.noConflict(true);
+</script>
+<script type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/plugins/wp-video-lightbox/js/jquery.prettyPhoto.min.js?ver=3.1.6' id='jquery.prettyphoto-js'></script>
+<script type='text/javascript' id='video-lightbox-js-extra'>
+/* <![CDATA[ */
+var vlpp_vars = {"prettyPhoto_rel":"wp-video-lightbox","animation_speed":"fast","slideshow":"5000","autoplay_slideshow":"false","opacity":"0.80","show_title":"true","allow_resize":"true","allow_expand":"true","default_width":"640","default_height":"480","counter_separator_label":"\/","theme":"pp_default","horizontal_padding":"20","hideflash":"false","wmode":"opaque","autoplay":"false","modal":"false","deeplinking":"false","overlay_gallery":"true","overlay_gallery_max":"30","keyboard_shortcuts":"true","ie6_fallback":"true"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/wp-content/plugins/wp-video-lightbox/js/video-lightbox-4da95d38fba34da38f0a3bf4571f7156.js' id='video-lightbox-js'></script>
+<link rel="https://api.w.org/" href="https://www.parkmycloud.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.parkmycloud.com/wp-json/wp/v2/posts/7097" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.parkmycloud.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://www.parkmycloud.com/?p=7097' />
+			<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin v7.50.64-->
+			<script type="text/javascript">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "blog-post"]);
+			</script>
+			<!-- DO NOT COPY THIS SNIPPET! End of Page Analytics Tracking for HubSpot WordPress plugin -->
+						<script>
+				(function() {
+					var hbspt = window.hbspt = window.hbspt || {};
+					hbspt.forms = hbspt.forms || {};
+					hbspt._wpFormsQueue = [];
+					hbspt.enqueueForm = function(formDef) {
+						if (hbspt.forms && hbspt.forms.create) {
+							hbspt.forms.create(formDef);
+						} else {
+							hbspt._wpFormsQueue.push(formDef);
+						}
+					}
+					if (!window.hbspt.forms.create) {
+						Object.defineProperty(window.hbspt.forms, 'create', {
+							configurable: true,
+							get: function() {
+								return hbspt._wpCreateForm;
+							},
+							set: function(value) {
+								hbspt._wpCreateForm = value;
+								while (hbspt._wpFormsQueue.length) {
+									var formDef = hbspt._wpFormsQueue.shift();
+									if (!document.currentScript) {
+										var formScriptId = 'leadin-forms-v2-js';
+										hubspot.utils.currentScript = document.getElementById(formScriptId);
+									}
+									hbspt._wpCreateForm.call(hbspt.forms, formDef);
+								}
+							},
+						});
+					}
+				})();
+			</script>
+		<script>
+            WP_VIDEO_LIGHTBOX_VERSION="1.9.1";
+            WP_VID_LIGHTBOX_URL="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/plugins/wp-video-lightbox";
+                        function wpvl_paramReplace(name, string, value) {
+                // Find the param with regex
+                // Grab the first character in the returned string (should be ? or &)
+                // Replace our href string with our new value, passing on the name and delimeter
+
+                var re = new RegExp("[\?&]" + name + "=([^&#]*)");
+                var matches = re.exec(string);
+                var newString;
+
+                if (matches === null) {
+                    // if there are no params, append the parameter
+                    newString = string + '?' + name + '=' + value;
+                } else {
+                    var delimeter = matches[0].charAt(0);
+                    newString = string.replace(re, delimeter + name + "=" + value);
+                }
+                return newString;
+            }
+            </script>		<script>
+			document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );
+		</script>
+				<style>
+			.no-js img.lazyload { display: none; }
+			figure.wp-block-image img.lazyloading { min-width: 150px; }
+							.lazyload, .lazyloading { opacity: 0; }
+				.lazyloaded {
+					opacity: 1;
+					transition: opacity 400ms;
+					transition-delay: 0ms;
+				}
+					</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="preload" href="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/themes/Divi/core/admin/fonts/modules.ttf" as="font" crossorigin="anonymous"><link rel="amphtml" href="https://www.parkmycloud.com/blog/azure-devops/amp/">
+
+<script>
+document.addEventListener('DOMContentLoaded', function(event){ 
+
+    if (window.location.hash) {
+        // Start at top of page
+        window.scrollTo(0, 0);
+		
+        // Prevent default scroll to anchor by hiding the target element
+        var db_hash_elem = document.getElementById(window.location.hash.substring(1));
+        window.db_location_hash_style = db_hash_elem.style.display;
+        db_hash_elem.style.display = 'none';
+		
+        // After a short delay, display the element and scroll to it
+        jQuery(function($){
+            setTimeout(function(){
+                $(window.location.hash).css('display', window.db_location_hash_style);
+                et_pb_smooth_scroll($(window.location.hash), false, 800);
+            }, 700);
+        });		
+    }
+});
+</script><link rel="icon" href="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/PMC-logo-cloud-only-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/PMC-logo-cloud-only-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/PMC-logo-cloud-only-300x300.png" />
+<meta name="msapplication-TileImage" content="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/PMC-logo-cloud-only-300x300.png" />
+	<script data-minify="1" type="text/javascript" src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/wp-content/plugins/parkmycloudsavings/jshashtable-701aa2a4e92d4144fd8c82ead46be947.js"></script>
+<!-- <script type="text/javascript" src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/plugins/parkmycloudsavings/jquery.flapper.js?ver=4.8"></script> -->
+<script type="text/javascript" src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/plugins/parkmycloudsavings/jquery.transform-0.9.3.min.js?ver=4.8"></script>
+<script type="text/javascript" src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/plugins/parkmycloudsavings/jquery.numberformatter-1.2.4.min.js?ver=4.8"></script>
+		
+	
+	
+	<script src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/themes/Divi-child/js/featherlight.min.js"></script>
+	
+	<script data-minify="1" src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/wp-content/themes/Divi-child/js/jquery.matchHeight-0883ea430d1405cc58de88183424a504.js" type="text/javascript"></script>
+	
+		<script data-minify="1" type="text/javascript" src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/ajax/libs/jqueryui/1.11.2/jquery-ui.min-f8c3c38379cfffec2f17962c43bd7484.js"></script>
+    <script type="text/javascript" src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/themes/Divi-child/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/themes/Divi-child/js/jstz.min.js"></script>
+
+    
+       
+      
+    <meta name="p:domain_verify" content="415739db8be86b2f2799c54236b563cd"/>
+</head>
+<body class="post-template-default single single-post postid-7097 single-format-standard et_pb_button_helper_class et_fixed_nav et_show_nav et_pb_show_title et_secondary_nav_enabled et_secondary_nav_only_menu et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background windows et_pb_gutters2 et_right_sidebar et_divi_theme et-db et_minified_js et_minified_css">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            'event': 'user status',
+            'user type': 'visitor',
+            'user plan': 'guest'
+        });
+
+    </script>
+
+    <script>var dataLayer = window.dataLayer || [];</script>
+    <!-- Google Tag Manager -->
+    <noscript><iframe 
+                      height="0" width="0" style="display:none;visibility:hidden" data-src="//www.googletagmanager.com/ns.html?id=GTM-N7SFHJ" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe></noscript>        
+    <!-- End Google Tag Manager -->
+	<div id="page-container">
+
+					<div id="top-header">
+			<div class="container clearfix">
+
+			
+				<div id="et-secondary-menu">
+				<ul id="et-secondary-nav" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="https://www.parkmycloud.com/about/">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="https://www.parkmycloud.com/faqs/">FAQs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-125"><a href="https://support-turbonomic.force.com/parkmycloudsupport">Support</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-875"><a href="https://www.parkmycloud.com/cloud-partners/">Partners</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3210"><a href="https://www.parkmycloud.com/cloud-partners/">Business Partners</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3211"><a href="https://www.parkmycloud.com/cloud-partners-technology/">Technology Partners</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="https://www.parkmycloud.com/contact-us/">Contact</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="https://console.parkmycloud.com/#/login/">Login</a></li>
+</ul>				</div> <!-- #et-secondary-menu -->
+
+			</div> <!-- .container -->
+		</div> <!-- #top-header -->
+		
+	
+			<header id="main-header" data-height-onload="80">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.parkmycloud.com/">
+						<img  alt="ParkMyCloud" id="logo" data-height-percentage="46" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/ParkMyCloud_Color_20_New_Logo-241.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/ParkMyCloud_Color_20_New_Logo-241.png" alt="ParkMyCloud" id="logo" data-height-percentage="46" /></noscript>
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="80" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-5905" class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5905"><a href="https://www.parkmycloud.com/platform/">Platform</a>
+<ul class="sub-menu">
+	<li id="menu-item-5914" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5914"><a>Cost Optimization Overview</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5906"><a href="https://www.parkmycloud.com/platform/#scheduling-feature">Scheduling Resources</a></li>
+		<li id="menu-item-5907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5907"><a href="https://www.parkmycloud.com/platform/#rightsizing-feature">Rightsizing Resources</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5913"><a>Features</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5915" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5915"><a href="https://www.parkmycloud.com/platform/#api-feature">API</a></li>
+		<li id="menu-item-5916" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5916"><a href="https://www.parkmycloud.com/platform/#chat-feature">ChatOps &#038; Notifications</a></li>
+		<li id="menu-item-5917" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5917"><a href="https://www.parkmycloud.com/platform/#engine-feature">Policy Engine</a></li>
+		<li id="menu-item-5918" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5918"><a href="https://www.parkmycloud.com/platform/#governance-feature">Governance &#038; RBAC</a></li>
+		<li id="menu-item-5919" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5919"><a href="https://www.parkmycloud.com/platform/#enterprise-feature">Enterprise Integrations</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-5908" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5908"><a>Solutions</a>
+<ul class="sub-menu">
+	<li id="menu-item-5909" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5909"><a href="https://www.parkmycloud.com/enterprise/">Enterprise</a></li>
+	<li id="menu-item-5910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5910"><a href="https://www.parkmycloud.com/small-business/">Small Business</a></li>
+	<li id="menu-item-5911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5911"><a href="https://www.parkmycloud.com/public-sector/">Public Sector</a></li>
+	<li id="menu-item-5912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5912"><a href="https://www.parkmycloud.com/managed-service-providers/">Managed Service Providers</a></li>
+</ul>
+</li>
+<li id="menu-item-7482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7482"><a href="https://www.parkmycloud.com/pricing/">Pricing</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28"><a href="/resources/">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="https://www.parkmycloud.com/collateral/">Data Sheets &#038; White Papers</a></li>
+	<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30"><a href="https://www.parkmycloud.com/case-studies/">Case Studies</a></li>
+	<li id="menu-item-3931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3931"><a href="https://www.parkmycloud.com/faqs/">FAQs</a></li>
+	<li id="menu-item-326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a href="https://www.parkmycloud.com/in-the-news/">In The News</a></li>
+	<li id="menu-item-6919" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6919"><a href="https://www.parkmycloud.com/savings-calculator/">Savings Calculator</a></li>
+	<li id="menu-item-365" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-365"><a href="https://www.parkmycloud.com/videos/">Videos</a></li>
+</ul>
+</li>
+<li id="menu-item-5952" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5952"><a href="https://www.parkmycloud.com/blog/">Blog</a></li>
+<li id="menu-item-5474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5474"><a href="https://www.parkmycloud.com/demo/">Book Demo</a></li>
+<li id="menu-item-4205" class="button menu-item menu-item-type-post_type menu-item-object-page menu-item-4205"><a href="https://www.parkmycloud.com/free-trial/">Free Trial</a></li>
+</ul>						</nav>
+					
+					
+					
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+			<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.parkmycloud.com/">
+					<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+			<div class="container clearfix button_container">
+				<div class="fixed_logo">
+					<a href="https://www.parkmycloud.com/"><img  alt="" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/ParkMyCloud_White_20_New_Logo-231.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/ParkMyCloud_White_20_New_Logo-231.png" alt="" /></noscript></a>
+				</div>
+				<div class="fixed_buttons">
+					<nav id="top-menu-buttons">
+						<ul id="top-menu-buttons" class="nav"><li id="menu-item-5904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5904"><a href="https://www.parkmycloud.com/demo/">Book a Demo</a></li>
+<li id="menu-item-5898" class="freetrial menu-item menu-item-type-post_type menu-item-object-page menu-item-5898"><a href="https://www.parkmycloud.com/free-trial/">Start Your Free Trial</a></li>
+<li id="menu-item-5899" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5899"><a href="https://www.parkmycloud.com/contact-us/">Contact Us</a></li>
+</ul>						</nav>
+				</div>
+			</div>
+		</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-7097" class="et_pb_post post-7097 post type-post status-publish format-standard has-post-thumbnail hentry category-microsoft-azure-management category-software-development-in-the-cloud">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">The 5 Components of Azure DevOps</h1>
+							<div class="addthis_sharing_toolbox" data-url="https://www.parkmycloud.com/blog/azure-devops/"></div>
+					</div> <!-- .et_post_meta_wrapper -->
+				
+					<div class="entry-content">
+						
+						
+						<p class="post-meta"> by <span class="author vcard"><a href="https://www.parkmycloud.com/blog/author/jferrer/" title="Posts by Jonathan Ferrer" rel="author">Jonathan Ferrer</a></span> | <span class="published">Nov 14, 2019</span> | <a href="https://www.parkmycloud.com/blog/category/microsoft-azure-management/" rel="category tag">Microsoft Azure Management</a>, <a href="https://www.parkmycloud.com/blog/category/software-development-in-the-cloud/" rel="category tag">Software Development in the Cloud</a> | <span class="comments-number"><a href="https://www.parkmycloud.com/blog/azure-devops/#respond">0 comments</a></span></p><div class="single-featured-image"><img  alt="The 5 Components of Azure DevOps"  width="1080" height="675" data-srcset="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps-3.png 800w, https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps-3-300x188.png 300w, https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps-3-768x480.png 768w, https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps-3-400x250.png 400w"  data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps-3.png" data-sizes="(max-width: 1080px) 100vw, 1080px" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps-3.png" alt="The 5 Components of Azure DevOps" class="" width="1080" height="675" srcset="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps-3.png 800w, https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps-3-300x188.png 300w, https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps-3-768x480.png 768w, https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps-3-400x250.png 400w" sizes="(max-width: 1080px) 100vw, 1080px" /></noscript></div>
+												<p><span style="font-weight: 400;">In the search to accelerate and simplify the DevOps process, we take a look at Microsoft’s Azure DevOps, a hosted service providing development and collaboration tool that was formerly known as Visual Studio Team Services (VSTS). Last year, Microsoft split VSTS into five separate</span><a href="https://azure.microsoft.com/en-us/blog/introducing-azure-devops/" target="_blank" rel="noopener noreferrer"> <span style="font-weight: 400;">Azure-branded services</span></a><span style="font-weight: 400;">, under the banner Azure DevOps for a complete offering in public cloud that makes it easier for developers to adopt portions of the Azure DevOps platform, without requiring them to go &#8220;all in&#8221; like the former VSTS.</span></p>
+<p><span style="font-weight: 400;">Azure DevOps supports both public and private cloud configurations &#8211; the services include:</span></p>
+<ul>
+<li style="font-weight: 400;"><a href="https://azure.microsoft.com/en-us/services/devops/boards/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Azure Boards</span></a><span style="font-weight: 400;"> &#8211; A work tracking system with Kanban boards, dashboards, and reporting</span></li>
+<li style="font-weight: 400;"><a href="https://azure.microsoft.com/en-us/services/devops/pipelines/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Azure Pipelines</span></a><span style="font-weight: 400;"> &#8211; A CI/CD, testing, and deployment system that can connect to any Git repository</span></li>
+<li style="font-weight: 400;"><a href="https://azure.microsoft.com/en-us/services/devops/repos/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Azure Repos</span></a><span style="font-weight: 400;"> &#8211; A cloud-hosted private Git repository service</span></li>
+<li style="font-weight: 400;"><a href="https://azure.microsoft.com/en-us/services/devops/test-plans/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Azure Test Plans</span></a><span style="font-weight: 400;"> &#8211; A solution for tests and capturing data about defects</span></li>
+<li style="font-weight: 400;"><a href="https://azure.microsoft.com/en-us/services/devops/artifacts/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Azure Artifacts</span></a><span style="font-weight: 400;"> &#8211; A hosting facility for Maven, npm, and NuGet packages</span></li>
+</ul>
+<p><span style="font-weight: 400;">Each of these Azure DevOps services is open and extensible and can be used with all varieties of applications, regardless of the framework, platform or cloud. Built-in cloud-hosted agents are provided for Windows, Mac OS and Linux and workflows are enabled for native container support and Kubernetes deployment options, virtual machines, and serverless environments.</span></p>
+<p><span style="font-weight: 400;">With all five services together users can take advantage of an integrated suite that provides end to end DevOps functionalities. But, since they are broken up into separate components, Azure DevOps gives users the flexibility to just pick which services to employ without the need to use the full suite. For example, with Kubernetes having a standard interface and running the same way on all cloud providers, Azure Pipelines can be used for deploying to</span><a href="https://www.parkmycloud.com/blog/azure-aks/" target="_blank" rel="noopener noreferrer"> <span style="font-weight: 400;">Azure Kubernetes Service (AKS)</span></a><span style="font-weight: 400;">,</span><a href="https://www.parkmycloud.com/blog/google-kubernetes-engine/" target="_blank" rel="noopener noreferrer"> <span style="font-weight: 400;">Google Kubernetes Engine (GKE)</span></a><span style="font-weight: 400;">,</span><a href="https://www.parkmycloud.com/blog/amazon-eks/" target="_blank" rel="noopener noreferrer"> <span style="font-weight: 400;">Amazon Elastic Kubernetes Service (EKS)</span></a><span style="font-weight: 400;">, or clusters from any other cloud provider without requiring the use of any of the other Azure DevOps components.</span></p>
+<h1><span style="font-weight: 400;">Embracing Azure DevOps</span></h1>
+<p><span style="font-weight: 400;">One of the main benefits for teams using Azure DevOps is developers will be able to work securely from anywhere and in any format and embrace open-source technology. Azure DevOps addresses the</span><a href="https://www.parkmycloud.com/blog/vendor-lock-in/"> <span style="font-weight: 400;">vendor lock-in</span></a><span style="font-weight: 400;"> problem from its early version by providing extensive integration with industry and community tools.</span></p>
+<p><span style="font-weight: 400;">With the many integrations available, users can log in using SSO tools like Azure AD or communicate with their team via Slack integration while accessing both cloud and on-premises resources.</span></p>
+<p><span style="font-weight: 400;">Azure Pipelines offers free CI/CD with unlimited minutes and 10 parallel jobs for every open source project and many of the top open-source projects already use Azure Pipelines for CI/CD, such as Atom, CPython, Pipenv, Tox, Visual Studio Code, and TypeScript.</span></p>
+<h1><span style="font-weight: 400;">Benefits of Azure DevOps </span></h1>
+<p><span style="font-weight: 400;">Azure DevOps use cases include:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Planning &#8211; Azure DevOps makes it easy for DevOps teams to manage their work with full visibility across products and projects, helping them keep development efforts transparent and on schedule. Teams can define, track, and layout work with Kanban boards, backlogs, custom dashboards and reporting capabilities using Azure Boards.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Developing &#8211;  Allows teams to share code and collaborate together with Visual Studio and Visual Studio Code. Users can create automatic workflows for automated testing and continuous integration in the cloud with Azure Pipelines. </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Delivery &#8211; Helps teams deploy applications to any Azure service automatically and with full control. Users can define and spin up multiple cloud environments with Azure Resource Manager or HashiCorp Terraform, and then create continuous delivery pipelines into these environments using Azure Pipelines or tools such as Jenkins and Spinnaker.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Operations &#8211;  With Azure Monitor, users can implement full stack monitoring, get actionable alerts, and gain insights from logs and telemetry.</span></li>
+</ul>
+<h1><span style="font-weight: 400;">Pricing</span></h1>
+<p><span style="font-weight: 400;">As for</span><a href="https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;"> Azure DevOps pricing</span></a><span style="font-weight: 400;">, there are a lot of open-source tools that can be combined to deliver the functionality that Azure DevOps promises to provide, but the basic plan for open source projects and small projects is free up to five users. For larger teams, the cost can range from $30 per month for 10 users to $90 per month for 20 users and so forth.</span></p>
+<p><span style="font-weight: 400;">In summary, Azure DevOps is an all in one focussed project tracking and planning tool mixed with Developer and DevOps tools for writing, building and deploying code that’s relatively quick and easy to use. But, while maintenance cost is decreased, developers only need an active subscription to have constant access to the latest version. Azure DevOps will indirectly utilize Azure Storage and compute services that will increase usage and impact costs. </span></p>
+<div class="spu-placeholder" style="display:none"></div>					
+					</div> <!-- .entry-content -->
+					<style>
+						div.entry-content {margin-bottom: 30px;} div.single-subscription { box-sizing: border-box; border: 1px solid rgb(187, 187, 187); } div.blogsub ul {margin-bottom:22px;} div.content div.blogsub ul li {display: inline;font-size:15px;padding: 0 8px;white-space: normal;} div.content div.blogsub ul li:first-of-type {padding-left: 0;} div.content div.blogsub ul li:last-of-type {padding-right: 0;}
+						
+						#left-area div.single-subscription ul {list-style-type: inside; padding: 0;} div.single-subscription.blogsub ul li {display: inline;
+font-size: 14px;
+padding: 0 8px;
+white-space: normal;}
+					</style>
+					
+					<div class="sidebar-cta text-center blogsub single-subscription">
+					    <h6 style="margin: 0 0 10px;font-family: montserrat, Verdana, Geneva, sans-serif;font-size: 36px; line-height: 40px;font-weight: 800;">Free Newsletter</h6>
+		    <p style="font-family: montserrat, Verdana, Geneva, sans-serif;font-size: 18px;font-weight: 800;">Cloud Optimization Blog</p>
+			<ul>
+				<li>Cloud Management</li>
+				<li>Cost Optimization Techniques</li>
+				<li>DevOps & ITOps How-To Guides</li>
+				<li>Cloud Industry Analysis</li>
+				<li>Technology Trends</li>
+						</ul>
+						<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+	portalId: "5948239",
+	formId: "4fa1d65f-4f5d-438b-abbe-c38b3d857548",
+	sfdcCampaignId: "7010Z000001Zr0fQAC"
+});
+</script>
+						
+			<p class="form-sub" style="margin: 16px 0 0; line-height: 18px;">Email Never Shared<br />
+			Cancel Any Time</p>
+					</div>
+					<div class="author-info">
+						<div class="content author-description">
+							<img alt=''  data-srcset='https://secure.gravatar.com/avatar/4682fe7b2c501f06ca8b20b29d08aaaf?s=148&#038;d=mm&#038;r=g 2x'  height='74' width='74' loading='lazy' data-src='https://secure.gravatar.com/avatar/4682fe7b2c501f06ca8b20b29d08aaaf?s=74&#038;d=mm&#038;r=g' class='avatar avatar-74 photo lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' /><noscript><img alt='' src='https://secure.gravatar.com/avatar/4682fe7b2c501f06ca8b20b29d08aaaf?s=74&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/4682fe7b2c501f06ca8b20b29d08aaaf?s=148&#038;d=mm&#038;r=g 2x' class='avatar avatar-74 photo' height='74' width='74' loading='lazy'/></noscript>							<h2 class="author-title">About Jonathan Ferrer</h2>
+							<p class="author-bio">
+								Jonathan Ferrer is the Marketing Manager for ParkMyCloud. Jonathan manages various digital marketing initiatives at ParkMyCloud. He developed an interest in communications while going to school for business management and IT studies. As a Marketing Manager, it was befitting for Jonathan to join ParkMyCloud and combine his passion for both technology and communications. In his spare time, he likes spending time with family, and enjoys cooking, reading, playing tennis, hiking and traveling.								<a class="author-link" href="https://www.parkmycloud.com/blog/author/jferrer/" rel="author">
+									View all posts by Jonathan Ferrer <span class="meta-nav">&rarr;</span>								</a>
+							</p>
+						</div><!-- .author-description -->
+					</div><!-- .author-info -->
+					<div class="et_post_meta_wrapper">
+					
+					
+					<!-- You can start editing here. -->
+
+<section id="comment-wrap">
+		   <div id="comment-section" class="nocomments">
+		  			 <!-- If comments are open, but there are no comments. -->
+
+		  	   </div>
+					<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Submit a Comment</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/azure-devops/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://www.parkmycloud.com/wp-comments-post.php?wpe-comment-post=parkmycloud" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Submit Comment" /> <input type='hidden' name='comment_post_ID' value='7097' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="b7f09cf824" /></p><input type="hidden" id="ak_js" name="ak_js" value="103"/><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea></form>	</div><!-- #respond -->
+		</section>					</div> <!-- .et_post_meta_wrapper -->
+				</article> <!-- .et_pb_post -->
+
+						</div> <!-- #left-area -->
+
+				<div id="sidebar">
+						
+			<style>
+			div.blogsub {
+				box-sizing: border-box;
+border: 1px solid rgb(187, 187, 187);
+text-align: center;
+padding: 20px;
+font-family: Montserrat, sans-serif;
+border-radius: 3px;
+			}
+			
+			div.blogsub form#blogsubscription input[type="submit"] {
+			    background: #cc0000;
+			}
+			
+			div.blogsub ul {
+				padding-left: 0;
+				list-style-type: none;
+				margin-top: 0;
+				padding-bottom: 10px;
+			}
+			
+			div.blogsub ul li {
+				font-size: 16px;
+				line-height: 28px;
+				margin-bottom: 0;
+			}
+			
+			div.blogsub h6 {
+				    margin: 0 0 10px;
+    font-family: montserrat, Verdana, Geneva, sans-serif;
+    font-size: 34px;
+    line-height: 38px;
+    color: #326eb7;
+			}
+			
+			p.form-sub {
+				font-size: 12px;
+			}
+		</style>
+			
+		<div class="sidebar-cta text-center blogsub" style="box-sizing: border-box; border: 1px solid rgb(187, 187, 187);" id="sticker">
+		    <h6 style="margin: 0 0 10px;font-family: montserrat, Verdana, Geneva, sans-serif;font-size: 36px; line-height: 40px;font-weight: 800;">Free Newsletter</h6>
+		    <p style="font-family: montserrat, Verdana, Geneva, sans-serif;font-size: 18px;font-weight: 800;">Cloud Optimization Blog</p>
+			<ul>
+				<li>Cloud Management</li>
+				<li>Cost Optimization Techniques</li>
+				<li>DevOps & ITOps How-To Guides</li>
+				<li>Cloud Industry Analysis</li>
+				<li>Technology Trends</li>
+			</ul>
+			<div class="newsletterform">
+			<!-- Start Act-On Newsletter Form -->
+					<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+	portalId: "5948239",
+	formId: "fee11bed-b8a4-4f8b-ba22-a07a3b27622e",
+	sfdcCampaignId: "7010Z000001Zr0fQAC"
+});
+</script>
+			
+			<!-- End Act-On Newsletter Form -->
+			</div>
+			<p class="form-sub" style="margin: 16px 0 0; line-height: 18px;">Email Never Shared<br />
+			Cancel Any Time</p>
+		</div>
+				
+					</div> <!-- end #sidebar -->
+		</div> <!-- #content-area -->
+	</div> <!-- .container -->
+	</div> <!-- #main-content -->
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+<div class="container">
+    <div id="footer-widgets" class="clearfix">
+		<div class="footer-widget"><div id="nav_menu-2" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">Solutions</h4><div class="menu-footer-navigation-1-container"><ul id="menu-footer-navigation-1" class="menu"><li id="menu-item-5920" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5920"><a href="https://www.parkmycloud.com/platform">Platform</a></li>
+<li id="menu-item-5921" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5921"><a href="https://www.parkmycloud.com/enterprise/">Enterprise</a></li>
+<li id="menu-item-6329" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6329"><a href="https://www.parkmycloud.com/small-business/">Small Business</a></li>
+<li id="menu-item-5922" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5922"><a href="https://www.parkmycloud.com/managed-service-providers/">Managed Service Providers</a></li>
+<li id="menu-item-5924" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5924"><a href="https://www.parkmycloud.com/public-sector/">Public Sector</a></li>
+<li id="menu-item-8054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8054"><a href="https://www.parkmycloud.com/parkmycloud-integrations/">Integrations</a></li>
+</ul></div></div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget"><div id="nav_menu-3" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">Resources</h4><div class="menu-footer-navigation-2-container"><ul id="menu-footer-navigation-2" class="menu"><li id="menu-item-5928" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5928"><a href="https://www.parkmycloud.com/pricing/">Pricing</a></li>
+<li id="menu-item-1754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1754"><a href="https://www.parkmycloud.com/faqs/">FAQs</a></li>
+<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="https://www.parkmycloud.com/savings-calculator/">Cloud Cost Savings Calculator</a></li>
+<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="https://www.parkmycloud.com/blog/">Blog</a></li>
+<li id="menu-item-5864" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5864"><a href="https://parkmycloud.com/collateral/">White Papers</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48"><a href="https://www.parkmycloud.com/case-studies/">Case Studies</a></li>
+<li id="menu-item-366" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-366"><a href="https://www.parkmycloud.com/videos/">Videos</a></li>
+<li id="menu-item-5929" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5929"><a href="https://www.parkmycloud.com/site-map/">Site Map</a></li>
+<li id="menu-item-5930" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5930"><a href="https://www.parkmycloud.com/slack">User Community</a></li>
+</ul></div></div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget"><div id="nav_menu-4" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">Company</h4><div class="menu-footer-navigation-3-container"><ul id="menu-footer-navigation-3" class="menu"><li id="menu-item-5867" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5867"><a href="https://www.parkmycloud.com/about/">About</a></li>
+<li id="menu-item-1755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1755"><a href="https://www.parkmycloud.com/careers-at-parkmycloud/">Careers</a></li>
+<li id="menu-item-5931" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5931"><a href="https://www.parkmycloud.com/in-the-news/">In the News</a></li>
+<li id="menu-item-5888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5888"><a href="https://www.parkmycloud.com/cloud-partners/">Partners</a></li>
+<li id="menu-item-124" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-124"><a href="https://support-turbonomic.force.com/parkmycloudsupport">Support</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://www.parkmycloud.com/contact-us/">Contact</a></li>
+</ul></div></div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget"><div id="nav_menu-8" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">Get Started</h4><div class="menu-footer-navigation-4-container"><ul id="menu-footer-navigation-4" class="menu"><li id="menu-item-5932" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5932"><a href="https://www.parkmycloud.com/free-trial/">Free Trial</a></li>
+<li id="menu-item-5933" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5933"><a href="https://www.parkmycloud.com/demo/">Demo</a></li>
+<li id="menu-item-5934" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5934"><a href="https://console.parkmycloud.com/#/login/">Login</a></li>
+</ul></div></div> <!-- end .fwidget --><div id="custom_html-2" class="widget_text fwidget et_pb_widget widget_custom_html"><h4 class="title">Contact Us</h4><div class="textwidget custom-html-widget"><p><i class="fas fa-envelope"></i> <a href="mailto:info@parkmycloud.com"><span>info@parkmycloud.com</span></a></p>
+
+<div id="social">
+		<a href="https://www.facebook.com/ParkMyCloud" title="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a> <a href="https://www.linkedin.com/company/parkmycloud" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a href="https://twitter.com/ParkMyCloud" title="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter-square"></i></a> <a href="https://www.g2.com/products/parkmycloud/reviews?utm_campaign=testimonials_embed&amp;utm_medium=testimonials&amp;utm_source=ParkMyCloud" title="G2" target="_blank" rel="noopener"><img  data-src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/g2-footer.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/g2-footer.png"></noscript></a>
+</div></div></div> <!-- end .fwidget --></div> <!-- end .footer-widget -->    </div> <!-- #footer-widgets -->
+</div>    <!-- .container -->
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">Copyright © ParkMyCloud 2015-2021. All rights reserved <span class="break">|</span> <a href="https://www.parkmycloud.com/privacy-policy/" title="Privacy Policy">Privacy Policy</a></div>					</div>	<!-- .container -->
+				</div>
+			</footer> <!-- #main-footer -->
+		</div> <!-- #et-main-area -->
+
+
+	</div> <!-- #page-container -->
+	
+	<style type="text/css">@media all and (min-width: 981px) {
+			header.et-fixed-header div.et_menu_container {
+				display: none;
+			}
+			}
+			
+			@media all and (min-width: 981px) {
+			header.et-fixed-header div.button_container {
+				display: block;
+				height: 70px;
+			}
+			}
+			
+			@media all and (min-width: 981px) and (max-width: 1040px) {
+				nav#top-menu-buttons {
+					text-align: right;
+				}
+			}</style>
+	<script data-minify="1" src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/wp-content/themes/Divi-child/js/sticky-14c2a8ab8bbce44c1243380396ab9cac.js" type="text/javascript"></script>
+	<script>
+	  if(screen&&screen.width>768&&window.innerHeight>740){
+	  jQuery(document).ready(function(){
+	    jQuery("#sticker").sticky({topSpacing:160, bottomSpacing: 500});
+	  });
+	  }
+	</script>
+	
+	<script type="text/javascript" charset="utf-8">
+	  jQuery(document).ready(function(){
+	    jQuery("a[rel^='prettyPhoto']").prettyPhoto({
+				default_width: 500, social_tools: false});
+		jQuery(function() {
+			jQuery('.video-card').matchHeight();
+		});
+	  }); 
+	</script>
+	
+	<script type="text/javascript">
+	jQuery(document).ready(function($){
+		jQuery("#gform_wrapper_13 .disable input").attr('disabled','disabled');
+	});
+	</script>
+
+	<div id="wow-modal-overlay-1" class="wow-modal-overlay" style="display:none;"><div id="wow-modal-overclose-1" class="wow-modal-overclose"></div><div id="wow-modal-window-1" class="wow-modal-window" style="display:none;"><div id="wow-modal-close-1" class="mw-close-btn topRight image"></div><div class="modal-window-content"><style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column-chatops {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+} 
+
+
+.row-chatops:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+.picture-chatops {
+ border: 1px solid ;
+  border-radius: 4px;
+  padding: 5px;
+
+}
+</style>
+ 
+<body>
+
+<h2>ChatOps Providers</h2>
+
+<div class="row-chatops">
+  <div class="column-chatops"> 
+        <p>Stay informed and manage your cloud environment, right from your ChatOps tools including Slack, Microsoft Teams, and Google chat products.</p>  
+<br>
+ <p><strong>Download: </strong><a href="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/ParkMyCloud-ChatOps-2.pdf">How to UseParkMyCloud + ChatOps Tools for Cloud Cost Management</a>  
+  </div>
+  <div class="column-chatops">
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img  alt="microsoft-teams"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/microsoft-teams-1-1.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/microsoft-teams-1-1.png" alt="microsoft-teams" class="picture-chatops" style="width:100px; height:100px"></noscript>Microsoft Teams</p>     
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img  alt="Google-Hangouts"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/hangg.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/hangg.png" alt="Google-Hangouts" class="picture-chatops" style="width:100px; height:100px"></noscript>Google Hangouts</p>  
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img  alt="Slack"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/slack335.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/slack335.png" alt="Slack" class="picture-chatops" style="width:100px; height:100px"></noscript>Slack</p>     
+    <p style="clear: both;"> 
+  </div> 
+</div> 
+ 
+</body>
+   </div></div></div><div id="wow-modal-overlay-2" class="wow-modal-overlay" style="display:none;"><div id="wow-modal-overclose-2" class="wow-modal-overclose"></div><div id="wow-modal-window-2" class="wow-modal-window" style="display:none;"><div id="wow-modal-close-2" class="mw-close-btn topRight image"></div><div class="modal-window-content"> 
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column-chatops {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 500px;   
+} 
+ 
+
+.row-chatops:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+.picture-chatops {
+ border: 1px solid ; 
+  border-radius: 2px;  
+  padding: 1px; 
+                  
+} 
+</style> 
+
+<body>
+
+<h2>Compute</h2>
+
+<div class="row-chatops"> 
+  <div class="column-chatops">
+        <p>Use ParkMyCloud to automatically optimize costs through resource scheduling and rightsizing. ParkMyCloud manages compute resources in AWS, Azure, Google Cloud, and Alibaba Cloud.</p>
+  </div>
+  <div class="column-chatops">    
+   <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img  alt="amazon ec2"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/aws-ec21.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/aws-ec21.png" alt="amazon ec2" class="picture-chatops" style="width:100px; height:100px"></noscript>Amazon EC2</p>                               
+   <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="AutoScaling"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-EC2-Auto-Scaling-Groups-1.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-EC2-Auto-Scaling-Groups-1.png"  alt="AutoScaling" class="picture-chatops" style="width:100px; height:100px"></noscript>Amazon Auto Scaling Groups</p>        
+   <p style="float: left; font-size: 10pt; text-align: center; width:20%; margin-right: 2%; margin-bottom: 0.5em;"><img  alt="AVM"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/download-1-1.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/download-1-1.png" alt="AVM" class="picture-chatops" style="width:100px; height:100px"></noscript>Azure Virtual Machine</p>    
+   <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img  alt="A scale sets"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/vmss-01.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/vmss-01.png" alt="A scale sets" class="picture-chatops" style="width:100px; height:100px"></noscript>Azure Scale Sets</p> <p style="clear: both;">    
+   <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img  alt="A resource groups"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/ARG.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/ARG.png" alt="A resource groups" class="picture-chatops" style="width:100px; height:100px"></noscript>Azure Resource Groups</p>
+   <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img  alt="G Compute Engine"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Google-Compute-Engine.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Google-Compute-Engine.png" alt="G Compute Engine" class="picture-chatops" style="width:100px; height:100px"></noscript>Google Compute Engine</p> 
+   <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img  alt="G managed IG"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/gmig.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/gmig.png" alt="G managed IG" class="picture-chatops" style="width:100px; height:100px"></noscript>Google Managed Instance Groups</p>              
+   <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img  alt="alibaba cloud"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/alibabac.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/alibabac.png" alt="alibaba cloud" class="picture-chatops" style="width:100px; height:100px"></noscript>Alibaba Cloud</p>         
+  </div>
+</div>
+ 
+</body>
+
+
+   </div></div></div><div id="wow-modal-overlay-3" class="wow-modal-overlay" style="display:none;"><div id="wow-modal-overclose-3" class="wow-modal-overclose"></div><div id="wow-modal-window-3" class="wow-modal-window" style="display:none;"><div id="wow-modal-close-3" class="mw-close-btn topRight image"></div><div class="modal-window-content"><style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column-chatops {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row-chatops:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.picture-chatops {
+ border: 1px solid ;
+  border-radius: 4px;
+  padding: 5px;
+
+}
+</style>
+<body>
+
+<h2>Storage</h2>
+
+<div class="row-chatops">
+  <div class="column-chatops">
+        <p>ParkMyCloud helps you identify and eliminate wasted spend on orphaned and excessive cloud storage in AWS and Azure.</p>
+  </div>
+  <div class="column-chatops"> 
+   <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img  alt="Amazon EBS"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon_EBS.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon_EBS.png" alt="Amazon EBS" class="picture-chatops" style="width:100px; height:100px"></noscript>EBS Volumes</p>
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="EBS Snapshot"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/EBS-Snapshots.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/EBS-Snapshots.png"  alt="EBS Snapshot" class="picture-chatops" style="width:100px; height:100px"></noscript>EBS Snapshots</p>
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="A Vol"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/AzVol.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/AzVol.png"  alt="A Vol" class="picture-chatops" style="width:100px; height:100px"></noscript>Azure Volumes</p>
+ 
+  </div>
+</div>
+
+</body>
+
+ </div></div></div><div id="wow-modal-overlay-4" class="wow-modal-overlay" style="display:none;"><div id="wow-modal-overclose-4" class="wow-modal-overclose"></div><div id="wow-modal-window-4" class="wow-modal-window" style="display:none;"><div id="wow-modal-close-4" class="mw-close-btn topRight image"></div><div class="modal-window-content"><style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column-chatops {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row-chatops:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.picture-chatops {
+ border: 1px solid ;
+  border-radius: 4px;
+  padding: 5px;
+}
+</style>
+
+<body>
+
+<h2>Database</h2>
+
+<div class="row-chatops">
+  <div class="column-chatops">
+        <p>ParkMyCloud makes it easy to reduce costs on public cloud databases through resource scheduling and rightsizing, for databases in AWS, Aurora, and Google Cloud.</p>
+  </div>
+  <div class="column-chatops">
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Amazon rds"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-RDS.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-RDS.png"  alt="Amazon rds" class="picture-chatops" style="width:100px; height:100px"></noscript>Amazon RDS</p> 
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Amazon Neptune"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-Neptune.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-Neptune.png"  alt="Amazon Neptune" class="picture-chatops" style="width:100px; height:100px"></noscript>Amazon Neptune</p> 
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Amazon RedShift"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-Redshift.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-Redshift.png"  alt="Amazon RedShift" class="picture-chatops" style="width:100px; height:100px"></noscript>Amazon Redshift</p> 
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img    alt="Amazon Aurora" style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-Aurora.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-Aurora.png"   alt="Amazon Aurora"class="picture-chatops" style="width:100px; height:100px"></noscript>Amazon Aurora</p>  
+    <p style="clear: both;">
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img    alt="GC SQL"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Google-Cloud-SQL.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Google-Cloud-SQL.png"   alt="GC SQL" class="picture-chatops" style="width:100px; height:100px"></noscript>Google Cloud SQL</p> 
+
+  </div>
+</div>
+
+</body>
+
+
+  </div></div></div><div id="wow-modal-overlay-5" class="wow-modal-overlay" style="display:none;"><div id="wow-modal-overclose-5" class="wow-modal-overclose"></div><div id="wow-modal-window-5" class="wow-modal-window" style="display:none;"><div id="wow-modal-close-5" class="mw-close-btn topRight image"></div><div class="modal-window-content"> <style>
+* {
+  box-sizing: border-box;
+}
+
+ 
+.column-chatops {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row-chatops:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.picture-chatops {
+ border: 1px solid ;
+  border-radius: 4px;
+  padding: 5px;
+ 
+}
+</style>
+
+<body>
+
+<h2>Container Platforms</h2> 
+ 
+<div class="row-chatops">
+  <div class="column-chatops">
+        <p>Find and eliminate wasted spend on container platforms, using ParkMyCloud to automatically schedule on/off times for your container clusters and nodes. </p>
+  </div>
+  <div class="column-chatops" >
+   <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Amazon EKS"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-EKS-1.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-EKS-1.png"  alt="Amazon EKS" class="picture-chatops" style="width:100px; height:100px"></noscript>Amazon EKS</p> 
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img    alt="AKS"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/AKS.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/AKS.png"   alt="AKS" class="picture-chatops" style="width:100px; height:100px"></noscript>AKS</p>
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img     alt="GKE"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/GKE.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/GKE.png"    alt="GKE" class="picture-chatops" style="width:100px; height:100px"></noscript>GKE</p> 
+  </div>
+</div>
+
+</body> 
+
+
+ </div></div></div><div id="wow-modal-overlay-6" class="wow-modal-overlay" style="display:none;"><div id="wow-modal-overclose-6" class="wow-modal-overclose"></div><div id="wow-modal-window-6" class="wow-modal-window" style="display:none;"><div id="wow-modal-close-6" class="mw-close-btn topRight image"></div><div class="modal-window-content"><style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column-chatops{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row-chatops:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.picture-chatops {
+ border: 1px solid ;
+  border-radius: 4px;
+  padding: 5px;
+}
+</style>
+
+<body>
+
+<h2>Single Sign-On</h2>
+
+<div class="row-chatops">
+  <div class="column-chatops" >
+        <p>Add users and create permissions in ParkMyCloudusing SSO with SAML 2.0, with support for Azure AD, Azure ADFS, Google Apps, Centrify, Okta, Ping Identity, and more.</p>
+  </div>
+  <div class="column-chatops" >
+
+ <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="MS ADFS"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/microsoft-active-directory-services.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/microsoft-active-directory-services.png"  alt="MS ADFS" class="picture-chatops" style="width:100px; height:100px"></noscript>Microsoft ADFS</p> 
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Onelogin"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/OneLogin.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/OneLogin.png"  alt="Onelogin" class="picture-chatops" style="width:100px; height:100px"></noscript>OneLogin</p>  
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Ping Identity"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Ping-Identity.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Ping-Identity.png"  alt="Ping Identity" class="picture-chatops" style="width:100px; height:100px"></noscript>Ping Identity</p> 
+   <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="MAD"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Microsoft-Active-Directory.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Microsoft-Active-Directory.png"  alt="MAD" class="picture-chatops" style="width:100px; height:100px"></noscript>Microsoft Active Directory</p> 
+    <p style="clear: both;">
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="G-Suite"   style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Google-G-Suite.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Google-G-Suite.png"  alt="G-Suite"  class="picture-chatops" style="width:100px; height:100px"></noscript>Google G Suite</p> 
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Okta"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/okta.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/okta.png"  alt="Okta" class="picture-chatops" style="width:100px; height:100px"></noscript>Okta</p> 
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Centrify"   style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/centrify.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/centrify.png"  alt="Centrify"  class="picture-chatops" style="width:100px; height:100px"></noscript>Centrify</p> 
+
+  </div>
+</div>
+
+</body> </div></div></div><div id="wow-modal-overlay-7" class="wow-modal-overlay" style="display:none;"><div id="wow-modal-overclose-7" class="wow-modal-overclose"></div><div id="wow-modal-window-7" class="wow-modal-window" style="display:none;"><div id="wow-modal-close-7" class="mw-close-btn topRight image"></div><div class="modal-window-content"><style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column-chatops {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row-chatops:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.picture-chatops {
+ border: 1px solid ;
+  border-radius: 4px;
+  padding: 5px;
+}
+</style>
+
+<body>
+
+<h2>Customizable Integrations</h2>
+
+<div class="row-chatops">
+  <div class="column-chatops">
+        <p>Use ParkMyCloud’s REST API and JSON Webhook to create customized integrations. Any action you can take through the UI can also be taken through ParkMyCloud’s documented API.</p>
+  </div>
+  <div class="column-chatops">
+   <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Rest API"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/restapi1.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/restapi1.png"  alt="Rest API" class="picture-chatops" style="width:100px; height:100px"></noscript>Rest API</p>  
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="JSON Webhook"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/noti.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/noti.png"  alt="JSON Webhook" class="picture-chatops" style="width:100px; height:100px"></noscript>JSON Webhook</p> 
+
+ 
+  </div>
+</div>
+
+</body> </div></div></div><div id="wow-modal-overlay-8" class="wow-modal-overlay" style="display:none;"><div id="wow-modal-overclose-8" class="wow-modal-overclose"></div><div id="wow-modal-window-8" class="wow-modal-window" style="display:none;"><div id="wow-modal-close-8" class="mw-close-btn topRight image"></div><div class="modal-window-content"><style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column-chatops {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row-chatops:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.picture-chatops {
+ border: 1px solid ;
+  border-radius: 4px;
+  padding: 5px;
+ 
+}
+</style>
+
+<body>
+ 
+<h2>IT Service Management</h2>
+
+<div class="row-chatops"> 
+  <div class="column-chatops">
+        <p>Keep your ITSM tool as your single source of truth, while enabling your users to optimize cloud costs using ParkMyCloud, right within their existing workflows.</p>
+<br>
+    <p><strong>Download: </strong><a href="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/ParkMyCloud-ServiceNow.pdf">How to Use ParkMyCloud + ServiceNow for Cloud Cost Management</a>   
+   </div>
+  
+  <div class="column-chatops">  
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="bmc"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/bmc.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/bmc.png"  alt="bmc" class="picture-chatops" style="width:100px; height:100px"></noscript>BMC</p>   
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Service Now"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/svn1.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/svn1.png"  alt="Service Now" class="picture-chatops" style="width:100px; height:100px"></noscript>ServiceNow</p>     
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Solarwinds"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/solarw.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/solarw.png"  alt="Solarwinds" class="picture-chatops" style="width:100px; height:100px"></noscript>SolarWinds</p>  
+    <p style="clear: both;">
+
+  </div> 
+</div> 
+
+</body>  </div></div></div><div id="wow-modal-overlay-9" class="wow-modal-overlay" style="display:none;"><div id="wow-modal-overclose-9" class="wow-modal-overclose"></div><div id="wow-modal-window-9" class="wow-modal-window" style="display:none;"><div id="wow-modal-close-9" class="mw-close-btn topRight image"></div><div class="modal-window-content"><style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column-chatops {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row-chatops:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.picture-chatops {
+ border: 1px solid ;
+  border-radius: 4px;
+  padding: 5px;
+
+}
+</style>
+
+<body>
+
+<h2>Infrastructure as Code</h2>
+
+<div class="row-chatops">
+  <div class="column-chatops">
+        <p>Integrate ParkMyCloud into your existing workflows to automatically optimize costs as you deploy cloud infrastructure.</p>
+  <br>
+    <p><strong>Download: </strong><a href="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/ParkMyCloud-Terraform.pdf">How to Automate Cloud Cost Optimization with ParkMyCloud + Terraform</a>   
+  </div>
+  <div class="column-chatops" >
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Ansible"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Ansible.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Ansible.png"  alt="Ansible" class="picture-chatops" style="width:100px; height:100px"></noscript>Ansible</p> 
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="AWSCloudFormation"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/AWS-CloudFormation.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/AWS-CloudFormation.png"  alt="AWSCloudFormation" class="picture-chatops" style="width:100px; height:100px"></noscript>AWS CloudFormation</p> 
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Azure Devops"   style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Azure-DevOps.png"  alt="Azure Devops"  class="picture-chatops" style="width:100px; height:100px"></noscript>Azure DevOps</p> 
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Terraform"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/terra.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/terra.png"  alt="Terraform" class="picture-chatops" style="width:100px; height:100px"></noscript>Terraform</p> 
+    <p style="clear: both;">
+    
+  </div> 
+</div> 
+
+</body>  </div></div></div><div id="wow-modal-overlay-10" class="wow-modal-overlay" style="display:none;"><div id="wow-modal-overclose-10" class="wow-modal-overclose"></div><div id="wow-modal-window-10" class="wow-modal-window" style="display:none;"><div id="wow-modal-close-10" class="mw-close-btn topRight image"></div><div class="modal-window-content"><style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column-chatops {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row-chatops:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.picture-chatops {
+ border: 1px solid ;
+  border-radius: 4px;
+  padding: 5px;
+
+}
+</style>
+
+<body>
+
+<h2>CI/CD</h2>
+
+<div class="row-chatops">
+  <div class="column-chatops">
+        <p>Take advantage of ParkMyCloud’s cost optimization, while maintaining the ability to control resources through your CI/CD tool using API calls as needed.</p> 
+  </div>
+  <div class="column-chatops">
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="bamboo"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/bam.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/bam.png"  alt="bamboo" class="picture-chatops" style="width:100px; height:100px"></noscript>Bamboo</p> 
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Spinnaker"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/spinna.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/spinna.png"  alt="Spinnaker" class="picture-chatops" style="width:100px; height:100px"></noscript>Spinnaker</p>
+    <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img    alt="Jenkins"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/jenk.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/jenk.png"   alt="Jenkins" class="picture-chatops" style="width:100px; height:100px"></noscript>Jenkins</p> 
+  </div>
+</div>
+
+</body>  </div></div></div><div id="wow-modal-overlay-11" class="wow-modal-overlay" style="display:none;"><div id="wow-modal-overclose-11" class="wow-modal-overclose"></div><div id="wow-modal-window-11" class="wow-modal-window" style="display:none;"><div id="wow-modal-close-11" class="mw-close-btn topRight image"></div><div class="modal-window-content"><style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column-chatops {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row-chatops:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.picture-chatops {
+ border: 1px solid ;
+  border-radius: 4px;
+  padding: 5px;
+ 
+}
+</style>
+
+<body>
+
+<h2>Monitoring Tools</h2>
+
+<div class="row-chatops">
+  <div class="column-chatops">
+        <p>ParkMyCloud works with your monitoring tools to keep your systems informed about user actions and more, while avoiding extraneous alerts.</p>
+  <br>
+    <p><strong>Download: </strong><a href="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/ParkMyCloud-Monitoring-Tools.pdf">How to UseParkMyCloud + Monitoring Tools for Cloud Cost Management</a>  
+  </div> 
+  <div class="column-chatops">
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="BMC"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/bmc.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/bmc.png"  alt="BMC" class="picture-chatops" style="width:100px; height:100px"></noscript>BMC</p>
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Datadog"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/datadog2.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/datadog2.png"  alt="Datadog" class="picture-chatops" style="width:100px; height:100px"></noscript>DataDog</p> 
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="MSCOM"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Microsoft-System-Center-Operations-Manager1.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Microsoft-System-Center-Operations-Manager1.png"  alt="MSCOM" class="picture-chatops" style="width:100px; height:100px"></noscript>Microsoft SCOM</p>   
+   <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img    alt="NewRelic"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/NewRelic.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/NewRelic.png"   alt="NewRelic" class="picture-chatops" style="width:100px; height:100px"></noscript>NewRelic</p> 
+    <p style="clear: both;"> 
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img    alt="Splunk"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Splunk.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Splunk.png"   alt="Splunk" class="picture-chatops" style="width:100px; height:100px"></noscript>Splunk</p>
+  <p style="float: left; font-size: 10pt; text-align: center; width: 20%; margin-right: 2%; margin-bottom: 0.5em;"><img   alt="Zabbix"  style="width:100px; height:100px" data-src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Zabbix.png" class="picture-chatops lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Zabbix.png"  alt="Zabbix" class="picture-chatops" style="width:100px; height:100px"></noscript>Zabbix</p> 
+  <p style="clear: both;"> 
+  
+  </div> 
+</div> 
+
+</body>  </div></div></div><!-- Start of Async HubSpot Analytics Code -->
+<script type="text/javascript">
+(function(d,s,i,r) {
+if (d.getElementById(i)){return;}
+var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/5948239.js';
+e.parentNode.insertBefore(n, e);
+})(document,"script","hs-analytics",300000);
+</script>
+<!-- End of Async HubSpot Analytics Code -->
+
+<style id='modal-window-inline-css' type='text/css'>
+@media only screen and (max-width: 480px){ #wow-modal-window-1 { width:85% !important; } } #wow-modal-close-1 { top: 0px;right: 0px; } #wow-modal-close-1.mw-close-btn.image:before { content: "\00d7"; text-align: center; width: 24px; height: 24px; line-height: 24px; color: #fff; font-family: inherit; font-size: 12px; font-weight: normal; font-style: normal; background: #000; border-radius: 0; } #wow-modal-close-1.mw-close-btn.image:hover:before { color: #000; background: #fff; }
+@media only screen and (max-width: 480px){ #wow-modal-window-2 { width:85% !important; } } #wow-modal-close-2 { top: 0px;right: 0px; } #wow-modal-close-2.mw-close-btn.image:before { content: "\00d7"; text-align: center; width: 24px; height: 24px; line-height: 24px; color: #fff; font-family: inherit; font-size: 12px; font-weight: normal; font-style: normal; background: #000; border-radius: 0; } #wow-modal-close-2.mw-close-btn.image:hover:before { color: #000; background: #fff; }
+@media only screen and (max-width: 480px){ #wow-modal-window-3 { width:85% !important; } } #wow-modal-close-3 { top: 0px;right: 0px; } #wow-modal-close-3.mw-close-btn.image:before { content: "\00d7"; text-align: center; width: 24px; height: 24px; line-height: 24px; color: #fff; font-family: inherit; font-size: 12px; font-weight: normal; font-style: normal; background: #000; border-radius: 0; } #wow-modal-close-3.mw-close-btn.image:hover:before { color: #000; background: #fff; }
+@media only screen and (max-width: 480px){ #wow-modal-window-4 { width:85% !important; } } #wow-modal-close-4 { top: 0px;right: 0px; } #wow-modal-close-4.mw-close-btn.image:before { content: "\00d7"; text-align: center; width: 24px; height: 24px; line-height: 24px; color: #fff; font-family: inherit; font-size: 12px; font-weight: normal; font-style: normal; background: #000; border-radius: 0; } #wow-modal-close-4.mw-close-btn.image:hover:before { color: #000; background: #fff; }
+@media only screen and (max-width: 480px){ #wow-modal-window-5 { width:85% !important; } } #wow-modal-close-5 { top: 0px;right: 0px; } #wow-modal-close-5.mw-close-btn.image:before { content: "\00d7"; text-align: center; width: 24px; height: 24px; line-height: 24px; color: #fff; font-family: inherit; font-size: 12px; font-weight: normal; font-style: normal; background: #000; border-radius: 0; } #wow-modal-close-5.mw-close-btn.image:hover:before { color: #000; background: #fff; }
+@media only screen and (max-width: 480px){ #wow-modal-window-6 { width:85% !important; } } #wow-modal-close-6 { top: 0px;right: 0px; } #wow-modal-close-6.mw-close-btn.image:before { content: "\00d7"; text-align: center; width: 24px; height: 24px; line-height: 24px; color: #fff; font-family: inherit; font-size: 12px; font-weight: normal; font-style: normal; background: #000; border-radius: 0; } #wow-modal-close-6.mw-close-btn.image:hover:before { color: #000; background: #fff; }
+@media only screen and (max-width: 480px){ #wow-modal-window-7 { width:85% !important; } } #wow-modal-close-7 { top: 0px;right: 0px; } #wow-modal-close-7.mw-close-btn.image:before { content: "\00d7"; text-align: center; width: 24px; height: 24px; line-height: 24px; color: #fff; font-family: inherit; font-size: 12px; font-weight: normal; font-style: normal; background: #000; border-radius: 0; } #wow-modal-close-7.mw-close-btn.image:hover:before { color: #000; background: #fff; }
+@media only screen and (max-width: 480px){ #wow-modal-window-8 { width:85% !important; } } #wow-modal-close-8 { top: 0px;right: 0px; } #wow-modal-close-8.mw-close-btn.image:before { content: "\00d7"; text-align: center; width: 24px; height: 24px; line-height: 24px; color: #fff; font-family: inherit; font-size: 12px; font-weight: normal; font-style: normal; background: #000; border-radius: 0; } #wow-modal-close-8.mw-close-btn.image:hover:before { color: #000; background: #fff; }
+@media only screen and (max-width: 480px){ #wow-modal-window-9 { width:85% !important; } } #wow-modal-close-9 { top: 0px;right: 0px; } #wow-modal-close-9.mw-close-btn.image:before { content: "\00d7"; text-align: center; width: 24px; height: 24px; line-height: 24px; color: #fff; font-family: inherit; font-size: 12px; font-weight: normal; font-style: normal; background: #000; border-radius: 0; } #wow-modal-close-9.mw-close-btn.image:hover:before { color: #000; background: #fff; }
+@media only screen and (max-width: 480px){ #wow-modal-window-10 { width:85% !important; } } #wow-modal-close-10 { top: 0px;right: 0px; } #wow-modal-close-10.mw-close-btn.image:before { content: "\00d7"; text-align: center; width: 24px; height: 24px; line-height: 24px; color: #fff; font-family: inherit; font-size: 12px; font-weight: normal; font-style: normal; background: #000; border-radius: 0; } #wow-modal-close-10.mw-close-btn.image:hover:before { color: #000; background: #fff; }
+@media only screen and (max-width: 480px){ #wow-modal-window-11 { width:85% !important; } } #wow-modal-close-11 { top: 0px;right: 0px; } #wow-modal-close-11.mw-close-btn.image:before { content: "\00d7"; text-align: center; width: 24px; height: 24px; line-height: 24px; color: #fff; font-family: inherit; font-size: 12px; font-weight: normal; font-style: normal; background: #000; border-radius: 0; } #wow-modal-close-11.mw-close-btn.image:hover:before { color: #000; background: #fff; }
+</style>
+<script data-minify="1" type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/wp-content/plugins/simple-tooltips/zebra_tooltips-94a8d0bb32f3060db0a1a641aa89f5e8.js' id='simple_tooltips_base-js'></script>
+<script data-minify="1" type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/wp-content/plugins/parkmycloudsavings/jquery.flapper-22e4c4134e22382166231b85d973128a.js' id='plugin-javascript-js'></script>
+<script data-minify="1" type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/wp-content/themes/Divi-child/js/jquery.bxslider-5e0d426351684db465b8cddf00976466.js' id='bxslider-javascript-js'></script>
+<script data-minify="1" type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/wp-content/themes/Divi-child/js/custom_scripts-437cda83dde9f20f50b8d193a671667a.js' id='custom-javascript-js'></script>
+<script type='text/javascript' id='leadin-script-loader-js-js-extra'>
+/* <![CDATA[ */
+var leadin_wordpress = {"userRole":"visitor","pageType":"post","leadinPluginVersion":"7.50.64"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/5948239-1f248c13825dd8759019e096d5f02a8f.js' async defer id='hs-script-loader'></script>
+<script type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.8.2' id='smush-lazy-load-js'></script>
+<script type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-includes/js/comment-reply.min.js?ver=5.7.1' id='comment-reply-js'></script>
+<script type='text/javascript' id='divi-custom-script-js-extra'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.parkmycloud.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.parkmycloud.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.parkmycloud.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"8290bbfb7e","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"db19419bd2","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"7097","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":""}; var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_box_shadow_elements = [];
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/wp-content/themes/Divi/js/custom.unified-a5116ff3d49ec9ae49f002ff4b66600f.js' id='divi-custom-script-js'></script>
+<script data-minify="1" type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/wp-content/themes/Divi/core/admin/js/common-eb9b2fb5c6508713428a5e2a34b7ddc5.js' id='et-core-common-js'></script>
+<script type='text/javascript' id='spup-public-js-extra'>
+/* <![CDATA[ */
+var spuvar = {"is_admin":"","l18n":{"wait":"Please wait","seconds":"seconds ","name_error":"Please enter a valid name","email_error":"Please enter a valid email","gdpr_error":"We need your consent to submit the form"},"disable_style":"","ajax_mode":"","site_url":"https:\/\/www.parkmycloud.com\/","ajax_mode_url":"https:\/\/www.parkmycloud.com\/?spu_action=spu_load&lang=","ajax_url":"https:\/\/www.parkmycloud.com\/wp-admin\/admin-ajax.php","pid":"7097","is_front_page":"","is_category":"","is_archive":"","is_search":"","is_preview":"","seconds_confirmation_close":"5","imagesloaded":"1","dsampling":"","dsamplingrate":"","disable_stats":""};
+var spuvar_social = [];
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/wp-content/plugins/popups-premium/public/assets/js/public-1278c148fc7f914422abe86f05b554cd.js' id='spup-public-js'></script>
+<script data-minify="1" async="async" type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/cache/min/1/wp-content/plugins/akismet/_inc/form-3d8bd3e5314d431b38561d33ac670441.js' id='akismet-form-js'></script>
+<script type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/plugins/modal-window/public/assets/js/jquery.effects.min.js?ver=5.1' id='modal-window-effects-js'></script>
+<script type='text/javascript' src='https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/plugins/modal-window/public/assets/js/jquery.modalWindow.min.js?ver=5.1' id='modal-window-js'></script>
+<script type='text/javascript' id='modal-window-js-after'>
+jQuery(function() {jQuery("#wow-modal-overlay-1").ModalWindow({"animation":["no","400","no","400"],"overlay":true,"overlay_css":["rgba(10,10,10,0.7)"],"action":["click","0"],"closeBtn":[false,"0"],"closeAction":[true,true],"triggers":["wow-modal-id-1","wow-modal-close-1","wow-button-close-1"],"modal_css":{"width":"1000px","height":"auto","top":"30%","left":"0%","right":"0%","padding":"10px","border-width":0,"border-style":"none","border-color":"#000000","position":"fixed","border-radius":"5px","background-color":"#ffffff","box-shadow":"none"},"content_css":{"font-family":"inherit","font-size":"16px"}}); });
+jQuery(function() {jQuery("#wow-modal-overlay-2").ModalWindow({"animation":["no","400","no","400"],"overlay":true,"overlay_css":["rgba(10,10,10,0.7)"],"action":["click","0"],"closeBtn":[false,"0"],"closeAction":[true,true],"triggers":["wow-modal-id-2","wow-modal-close-2","wow-button-close-2"],"modal_css":{"width":"1000px","height":"600px","top":"10%","left":"0%","right":"0%","padding":"10px","border-width":0,"border-style":"solid","border-color":"#000000","position":"fixed","border-radius":"5px","background-color":"#ffffff","box-shadow":"none"},"content_css":{"font-family":"inherit","font-size":"16px"}}); });
+jQuery(function() {jQuery("#wow-modal-overlay-3").ModalWindow({"animation":["no","400","no","400"],"overlay":true,"overlay_css":["rgba(10,10,10,0.7)"],"action":["click","0"],"closeBtn":[false,"0"],"closeAction":[true,true],"triggers":["wow-modal-id-3","wow-modal-close-3","wow-button-close-3"],"modal_css":{"width":"1000px","height":"auto","top":"30%","left":"0%","right":"0%","padding":"10px","border-width":0,"border-style":"solid","border-color":"#000000","position":"fixed","border-radius":"5px","background-color":"#ffffff","box-shadow":"none"},"content_css":{"font-family":"inherit","font-size":"16px"}}); });
+jQuery(function() {jQuery("#wow-modal-overlay-4").ModalWindow({"animation":["no","400","no","400"],"overlay":true,"overlay_css":["rgba(10,10,10,0.7)"],"action":["click","0"],"closeBtn":[false,"0"],"closeAction":[true,true],"triggers":["wow-modal-id-4","wow-modal-close-4","wow-button-close-4"],"modal_css":{"width":"1000px","height":"500px","top":"20%","left":"0%","right":"0%","padding":"10px","border-width":0,"border-style":"solid","border-color":"#000000","position":"fixed","border-radius":"5px","background-color":"#ffffff","box-shadow":"none"},"content_css":{"font-family":"inherit","font-size":"16px"}}); });
+jQuery(function() {jQuery("#wow-modal-overlay-5").ModalWindow({"animation":["no","400","no","400"],"overlay":true,"overlay_css":["rgba(10,10,10,0.7)"],"action":["click","0"],"closeBtn":[false,"0"],"closeAction":[true,true],"triggers":["wow-modal-id-5","wow-modal-close-5","wow-button-close-5"],"modal_css":{"width":"1000px","height":"auto","top":"30%","left":"0%","right":"0%","padding":"10px","border-width":0,"border-style":"solid","border-color":"#000000","position":"fixed","border-radius":"5px","background-color":"#ffffff","box-shadow":"none"},"content_css":{"font-family":"inherit","font-size":"16px"}}); });
+jQuery(function() {jQuery("#wow-modal-overlay-6").ModalWindow({"animation":["no","400","no","400"],"overlay":true,"overlay_css":["rgba(10,10,10,0.7)"],"action":["click","0"],"closeBtn":[false,"0"],"closeAction":[true,true],"triggers":["wow-modal-id-6","wow-modal-close-6","wow-button-close-6"],"modal_css":{"width":"1000px","height":"500px","top":"20%","left":"0%","right":"0%","padding":"10px","border-width":0,"border-style":"solid","border-color":"#000000","position":"fixed","border-radius":"5px","background-color":"#ffffff","box-shadow":"none"},"content_css":{"font-family":"inherit","font-size":"16px"}}); });
+jQuery(function() {jQuery("#wow-modal-overlay-7").ModalWindow({"animation":["no","400","no","400"],"overlay":true,"overlay_css":["rgba(10,10,10,0.7)"],"action":["click","0"],"closeBtn":[false,"0"],"closeAction":[true,true],"triggers":["wow-modal-id-7","wow-modal-close-7","wow-button-close-7"],"modal_css":{"width":"1000px","height":"auto","top":"30%","left":"0%","right":"0%","padding":"10px","border-width":0,"border-style":"solid","border-color":"#000000","position":"fixed","border-radius":"5px","background-color":"#ffffff","box-shadow":"none"},"content_css":{"font-family":"inherit","font-size":"16px"}}); });
+jQuery(function() {jQuery("#wow-modal-overlay-8").ModalWindow({"animation":["no","400","no","400"],"overlay":true,"overlay_css":["rgba(10,10,10,0.7)"],"action":["click","0"],"closeBtn":[false,"0"],"closeAction":[true,true],"triggers":["wow-modal-id-8","wow-modal-close-8","wow-button-close-8"],"modal_css":{"width":"1000px","height":"auto","top":"30%","left":"0%","right":"0%","padding":"10px","border-width":0,"border-style":"solid","border-color":"#000000","position":"fixed","border-radius":"5px","background-color":"#ffffff","box-shadow":"none"},"content_css":{"font-family":"inherit","font-size":"16px"}}); });
+jQuery(function() {jQuery("#wow-modal-overlay-9").ModalWindow({"animation":["no","400","no","400"],"overlay":true,"overlay_css":["rgba(10,10,10,0.7)"],"action":["click","0"],"closeBtn":[false,"0"],"closeAction":[true,true],"triggers":["wow-modal-id-9","wow-modal-close-9","wow-button-close-9"],"modal_css":{"width":"1000px","height":"auto","top":"30%","left":"0%","right":"0%","padding":"10px","border-width":0,"border-style":"solid","border-color":"#000000","position":"fixed","border-radius":"5px","background-color":"#ffffff","box-shadow":"none"},"content_css":{"font-family":"inherit","font-size":"16px"}}); });
+jQuery(function() {jQuery("#wow-modal-overlay-10").ModalWindow({"animation":["no","400","no","400"],"overlay":true,"overlay_css":["rgba(10,10,10,0.7)"],"action":["click","0"],"closeBtn":[false,"0"],"closeAction":[true,true],"triggers":["wow-modal-id-10","wow-modal-close-10","wow-button-close-10"],"modal_css":{"width":"1000px","height":"auto","top":"30%","left":"0%","right":"0%","padding":"10px","border-width":0,"border-style":"solid","border-color":"#000000","position":"fixed","border-radius":"5px","background-color":"#ffffff","box-shadow":"none"},"content_css":{"font-family":"inherit","font-size":"16px"}}); });
+jQuery(function() {jQuery("#wow-modal-overlay-11").ModalWindow({"animation":["no","400","no","400"],"overlay":true,"overlay_css":["rgba(10,10,10,0.7)"],"action":["click","0"],"closeBtn":[false,"0"],"closeAction":[true,true],"triggers":["wow-modal-id-11","wow-modal-close-11","wow-button-close-11"],"modal_css":{"width":"1000px","height":"600px","top":"10%","left":"0%","right":"0%","padding":"10px","border-width":0,"border-style":"solid","border-color":"#000000","position":"fixed","border-radius":"5px","background-color":"#ffffff","box-shadow":"none"},"content_css":{"font-family":"inherit","font-size":"16px"}}); });
+</script>
+                			            
+                <script type="text/javascript">
+                    jQuery(function() {
+                                                
+                        jQuery(".tooltips img").closest(".tooltips").css("display", "inline-block");
+                    
+                        new jQuery.Zebra_Tooltips(jQuery('.tooltips').not('.custom_m_bubble'), {
+                            'background_color':     '#000000',
+                            'color':				'#ffffff',
+                            'max_width':  250,
+                            'opacity':    .95, 
+                            'position':    'left'
+                        });
+                        
+                                            
+                    });
+                </script>        
+			
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c35f4fd125859d"></script> -->
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55cd92c5172c93db"></script>
+
+
+
+
+<!-- Chatra {literal} -->
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'ceitHMJ8cHcsJAbEg';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+
+
+
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,n,u,a){e.twq||(a=e.twq=function(){a.exe?a.exe.apply(a,arguments):
+a.queue.push(arguments);},a.version='1',a.queue=[],t=n.createElement(u),
+t.async=!0,t.src='//static.ads-twitter.com/uwt.js',s=n.getElementsByTagName(u)[0],
+s.parentNode.insertBefore(t,s))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','nv4qe');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
+	
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			if ( $( "#input_24_9" ).length ) {
+				var tz = jstz.determine();
+				var timezone = tz.name();
+				document.getElementById("input_24_9").value = timezone;
+			}
+		});
+	</script>
+	
+</body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
